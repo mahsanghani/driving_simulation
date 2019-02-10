@@ -9,6 +9,7 @@ def onConnect(client, userdata, flags, rc):
 	client.subscribe('video')
 
 def onDisconnect(client, userdata, rc):
+	closeWindows()
 	print('disconnected!')
 
 def onMessage(client, userdata, message):
