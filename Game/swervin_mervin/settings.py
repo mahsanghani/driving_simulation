@@ -1,7 +1,7 @@
 from pygame import Color
 import math, os
 
-FPS                   = 24
+FPS                   = 10
 TITLE_FPS             = 20
 COUNTDOWN_FPS         = 1
 PLAYER_SELECT_FPS     = 10
