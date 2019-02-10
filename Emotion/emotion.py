@@ -21,7 +21,9 @@ image = types.Image(content=content)
 
 # Performs label detection on the image file
 response = client.face_detection(image=image)
-labels = response.face_annotations
+label = response.face_annotations[0]
+
+#for label in labels:
 
 print('Joy Score: {}'.format(label.joy_likelihood))
 print('Anger Score: {}'.format(label.anger_likelihood))
