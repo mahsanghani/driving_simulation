@@ -42,7 +42,7 @@ def getEyes(image):
                        
 		#pupilFrame = cv2.equalizeHist(frame[y+(h*.25):(y+h), x:(x+w)]) #using histogram equalization of better image. 
 		cl1 = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8)) #set grid size
-		clahe = cl1.apply(pupilFrame)  #clahe
+		clahe = cl1.apply(pupilFrame)  #clahe #Clipped Local Adaptive Histogram Equalization (CLAHE)
 		blur = cv2.medianBlur(clahe, 7)  #median blur
 	x, y = 240, 170
 	if len(eyelist) == 1:
