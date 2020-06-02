@@ -70,13 +70,3 @@ class yolov3(object):
 		Width, Height = self.preprocess(image)
 		class_ids, confidences, boxes = self.feedforward(Width, Height)
 		return self.postprocess(image, class_ids, confidences, boxes)	
-
-
-
-
-
-
-
-
-
-
